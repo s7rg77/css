@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>css</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blue;
+            z-index: -2;
+        }
+
+        .greenHill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            z-index: -1;
+        }
+
+        .greenHill01,
+        .flowers01 {
+            position: fixed;
+            display: flex;
+            bottom: 0px;
+            animation: scroll 1.125s linear infinite;
+        }
+
+        .sky {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 0vh;
+            z-index: -2;
+        }
+
+        .sky001a {
+            display: flex;
+            margin-bottom: 1%;
+            animation: scroll 2s linear infinite;
+        }
+
+        .sky002a {
+            display: flex;
+            margin-bottom: 0.75%;
+            animation: scroll 3s linear infinite;
+        }
+
+        .sky001b {
+            display: flex;
+            margin-bottom: 0.50%;
+            animation: scroll 4s linear infinite;
+        }
+
+        .sky002b {
+            display: flex;
+            margin-bottom: 0.25%;
+            animation: scroll 5s linear infinite;
+        }
+
+        .sky001c {
+            display: flex;
+            margin-bottom: 0%;
+            animation: scroll 6s linear infinite;
+        }
+
+        .ground {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 27.5vh;
+            z-index: -2;
+        }
+
+        .ground01 {
+            display: flex;
+            animation: scroll 7s linear infinite;
+        }
+
+        .ground02 {
+            display: flex;
+            animation: scroll 5s linear infinite;
+        }
+
+        .water {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 47.5vh;
+            z-index: -2;
+        }
+
+        .water001a {
+            display: flex;
+            margin-bottom: 0.15%;
+            animation: scroll 4.75s linear infinite;
+        }
+
+        .water001b {
+            display: flex;
+            margin-bottom: 0.3%;
+            animation: scroll 4.45s linear infinite;
+        }
+
+        .water001c {
+            display: flex;
+            margin-bottom: 0.45%;
+            animation: scroll 4.15s linear infinite;
+        }
+
+        .water001d {
+            display: flex;
+            margin-bottom: 0.6%;
+            animation: scroll 3.86s linear infinite;
+        }
+
+        .water001e {
+            display: flex;
+            margin-bottom: 0.75%;
+            animation: scroll 3.56s linear infinite;
+        }
+
+        .water001f {
+            display: flex;
+            margin-bottom: 0.90%;
+            animation: scroll 3.27s linear infinite;
+        }
+
+        .water001g {
+            display: flex;
+            margin-bottom: 1.05%;
+            animation: scroll 2.97s linear infinite;
+        }
+
+        .water001h {
+            display: flex;
+            margin-bottom: 1.20%;
+            animation: scroll 2.68s linear infinite;
+        }
+
+        .water001i {
+            display: flex;
+            margin-bottom: 1.35%;
+            animation: scroll 2.38s linear infinite;
+        }
+
+        .water001j {
+            display: flex;
+            margin-bottom: 1.50%;
+            animation: scroll 2.09s linear infinite;
+        }
+
+        .water001k {
+            display: flex;
+            margin-bottom: 1.65%;
+            animation: scroll 1.79s linear infinite;
+        }
+
+        .water001l {
+            display: flex;
+            margin-bottom: 1.80%;
+            animation: scroll 1.50s linear infinite;
+        }
+
+        @media (orientation: portrait) {
+
+            .greenHill01,
+            .flowers01 {
+                height: 50vh;
+            }
+
+            .sky001a,
+            .sky002a,
+            .sky001b,
+            .sky002b,
+            .sky001c {
+                height: 5vh;
+            }
+
+            .ground01,
+            .ground02 {
+                height: 10vh;
+            }
+
+            .water001a,
+            .water001b,
+            .water001c,
+            .water001d,
+            .water001e,
+            .water001f,
+            .water001g,
+            .water001h,
+            .water001i,
+            .water001j,
+            .water001k,
+            .water001l {
+                height: 1vh;
+            }
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-12.5%);
+                }
+            }
+        }
+
+        @media (orientation: landscape) {
+
+            .greenHill01,
+            .flowers01 {
+                height: 50vh;
+            }
+
+            .sky001a,
+            .sky002a,
+            .sky001b,
+            .sky002b,
+            .sky001c {
+                height: 5vh;
+            }
+
+            .ground01,
+            .ground02 {
+                height: 10vh;
+            }
+
+            .water001a,
+            .water001b,
+            .water001c,
+            .water001d,
+            .water001e,
+            .water001f,
+            .water001g,
+            .water001h,
+            .water001i,
+            .water001j,
+            .water001k,
+            .water001l {
+                height: 1vh;
+            }
+
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-12.5%);
+                }
+            }
+        }
+
+        #head {
+            display: flex;
+        }
+
+        .home,
+        .doc,
+        .git {
+            width: 100px;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 5px;
+            border: none;
+            background-color: #682400;
+            color: #90FC00;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<div id="head">
+    <button class="doc" onclick="goDoc()">doc</button>
+    <button class="git" onclick="goGit()">git</button>
+    <button class="home" onclick="goHome()">back</button>
+</div>
+
+<body>
+    <div class="greenHill">
+        <div class="greenHill01">
+            <img src="img/transparentGreenHill.png" alt="greenHill">
+            <img src="img/transparentGreenHill.png" alt="greenHill">
+            <img src="img/transparentGreenHill.png" alt="greenHill">
+            <img src="img/transparentGreenHill.png" alt="greenHill">
+            <img src="img/transparentGreenHill.png" alt="greenHill">
+            <img src="img/transparentGreenHill.png" alt="greenHill">
+            <img src="img/transparentGreenHill.png" alt="greenHill">
+            <img src="img/transparentGreenHill.png" alt="greenHill">
+        </div>
+        <div class="flowers01">
+            <img src="img/transparentflowers01.png" alt="transparentflowers01">
+            <img src="img/transparentflowers01.png" alt="transparentflowers01">
+            <img src="img/transparentflowers01.png" alt="transparentflowers01">
+            <img src="img/transparentflowers01.png" alt="transparentflowers01">
+            <img src="img/transparentflowers01.png" alt="transparentflowers01">
+            <img src="img/transparentflowers01.png" alt="transparentflowers01">
+            <img src="img/transparentflowers01.png" alt="transparentflowers01">
+            <img src="img/transparentflowers01.png" alt="transparentflowers01">
+        </div>
+    </div>
+    <div class="sky">
+        <div class="sky001a">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+        </div>
+        <div class="sky002a">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+        </div>
+        <div class="sky001b">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+        </div>
+        <div class="sky002b">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+            <img src="img/transparentsky002.png" alt="transparentsky002">
+        </div>
+        <div class="sky001c">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+            <img src="img/transparentsky001.png" alt="transparentsky001">
+        </div>
+    </div>
+    <div class="ground">
+        <div class="ground01">
+            <img src="img/transparentground01.png" alt="transparentground01">
+            <img src="img/transparentground01.png" alt="transparentground01">
+            <img src="img/transparentground01.png" alt="transparentground01">
+            <img src="img/transparentground01.png" alt="transparentground01">
+            <img src="img/transparentground01.png" alt="transparentground01">
+            <img src="img/transparentground01.png" alt="transparentground01">
+            <img src="img/transparentground01.png" alt="transparentground01">
+            <img src="img/transparentground01.png" alt="transparentground01">
+        </div>
+        <div class="ground02">
+            <img src="img/ground02.png" alt="ground02">
+            <img src="img/ground02.png" alt="ground02">
+            <img src="img/ground02.png" alt="ground02">
+            <img src="img/ground02.png" alt="ground02">
+            <img src="img/ground02.png" alt="ground02">
+            <img src="img/ground02.png" alt="ground02">
+            <img src="img/ground02.png" alt="ground02">
+            <img src="img/ground02.png" alt="ground02">
+        </div>
+    </div>
+    <div class="water">
+        <div class="water001a">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001b">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001c">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001d">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001e">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001f">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001g">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001h">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001i">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001j">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001k">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+        <div class="water001l">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+            <img src="img/transparentwater001.png" alt="transparentwater001">
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const flowersContainer = document.querySelector(".flowers01");
+            const flowersImages = [
+                "img/transparentflowers01.png",
+                "img/transparentflowers02.png"
+            ];
+            let currentImageIndex = 0;
+            function changeFlowerImage() {
+                flowersContainer.innerHTML = `
+                    <img src="${flowersImages[currentImageIndex]}" alt="transparentflower">
+                    <img src="${flowersImages[currentImageIndex]}" alt="transparentflower">
+                    <img src="${flowersImages[currentImageIndex]}" alt="transparentflower">
+                    <img src="${flowersImages[currentImageIndex]}" alt="transparentflower">
+                    <img src="${flowersImages[currentImageIndex]}" alt="transparentflower">
+                    <img src="${flowersImages[currentImageIndex]}" alt="transparentflower">
+                    <img src="${flowersImages[currentImageIndex]}" alt="transparentflower">
+                    <img src="${flowersImages[currentImageIndex]}" alt="transparentflower">
+                `;
+                currentImageIndex = (currentImageIndex + 1) % flowersImages.length;
+            }
+            setInterval(changeFlowerImage, 1000);
+        });
+
+        function goHome() {
+
+            window.location.href = '/';
+
+        }
+
+        function goGit() {
+
+            window.location.href = 'https://github.com/s7rg77/css';
+
+        }
+
+        function goDoc() {
+
+            window.location.href = '/doc';
+
+        }
+    </script>
+</body>
+
+</html>
